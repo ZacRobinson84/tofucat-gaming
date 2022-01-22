@@ -9,6 +9,12 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
 /* Styling for Header and Navbar */
 
 .title {
@@ -20,7 +26,7 @@ h1 {
   font-family: "Russo One", sans-serif;
   margin: 0 auto;
   background: radial-gradient(ellipse at top, #f396ff, transparent),
-            radial-gradient(ellipse at bottom, #5dffe4, transparent););
+    radial-gradient(ellipse at bottom, #5dffe4, transparent);
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -31,7 +37,7 @@ h1 {
   display: flex;
   justify-content: space-around;
   background: radial-gradient(ellipse at top, #3f3f3f, transparent),
-            radial-gradient(ellipse at bottom, #7a7a7a, transparent);
+    radial-gradient(ellipse at bottom, #7a7a7a, transparent);
   font-family: "Russo One", sans-serif;
   font-size: 2rem;
   overflow: hidden;
@@ -98,10 +104,22 @@ h1 {
     background-color: rgb(121, 121, 121);
   }
 
-  /* Styling for topnav on small screens */
-
-  .topnav.responsive .menu-icon {
+  .members h1 {
+    font-size: 2.5rem;
   }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+  /* Styling for topnav on small screens */
 
   /*For animation of dropdown menu */
   @keyframes menuFade {
@@ -164,3 +182,30 @@ h1 {
   padding: 100px 0;
   margin: 0;
 }
+
+/* Styling for members page */
+
+.members {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.members h1 {
+  font-family: "Russo One", sans-serif;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 75%;
+  text-overflow: clip;
+}
+
+.member-profile {
+  background: linear-gradient(greenyellow, rgb(233, 255, 197));
+  margin: 10px auto;
+  border-radius: 10px;
+  width: 70%;
+}
+
+
+  
