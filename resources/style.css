@@ -96,9 +96,40 @@ h1 {
     background-color: rgb(121, 121, 121);
   }
 
+  /* Styling for topnav on small screens */
+
+  .topnav.responsive {
+  }
+
+  .topnav.responsive .menu-icon {
+    position: absolute;
+  }
+
   .topnav.responsive ul {
-    display: block;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 62px;
+    padding: 0 100%;
+    background-color: rgb(53, 53, 53);
+  }
+
+  .topnav.responsive li {
+    border: 1px solid rgb(121, 121, 121);
+    border-style: none none solid none;
+    padding: 0 100%;
+  }
+
+  .topnav.responsive li:hover {
+    background-color: greenyellow;
+  }
+
+  .topnav.responsive li:hover a {
+    color: rgb(53, 53, 53);
+  }
+
+  .topnav.responsive a {
+    font-size: 3rem;
   }
 }
-
-/* Styling for topnav on small screens */
