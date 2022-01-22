@@ -19,12 +19,8 @@ h1 {
 #title-hi {
   font-family: "Russo One", sans-serif;
   margin: 0 auto;
-  background-image: linear-gradient(
-    45deg,
-    rgb(0, 183, 255),
-    rgb(94, 255, 102),
-    rgb(173, 80, 173)
-  );
+  background: radial-gradient(ellipse at top, #f396ff, transparent),
+            radial-gradient(ellipse at bottom, #5dffe4, transparent););
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -34,7 +30,8 @@ h1 {
 .topnav {
   display: flex;
   justify-content: space-around;
-  background-color: rgb(121, 121, 121);
+  background: radial-gradient(ellipse at top, #3f3f3f, transparent),
+            radial-gradient(ellipse at bottom, #7a7a7a, transparent);
   font-family: "Russo One", sans-serif;
   font-size: 2rem;
   overflow: hidden;
@@ -82,6 +79,7 @@ h1 {
     display: block;
     padding: 5px;
     border-radius: 5px;
+    z-index: 2;
   }
 
   .menu-icon:hover {
@@ -103,7 +101,6 @@ h1 {
   /* Styling for topnav on small screens */
 
   .topnav.responsive .menu-icon {
-    position: absolute;
   }
 
   /*For animation of dropdown menu */
@@ -125,12 +122,15 @@ h1 {
     background-color: rgb(53, 53, 53);
     margin-top: 62px;
     animation: menuFade 500ms ease-in-out forwards;
+    z-index: 2;
+    position: absolute;
   }
 
-  .topnav.responsive li {
+  .topnav.responsive ul li {
     border: 1px solid rgb(121, 121, 121);
     border-style: none none solid none;
     padding: 0 100%;
+    position: relative;
   }
 
   .topnav.responsive li:hover {
@@ -152,9 +152,15 @@ h1 {
 .intro {
   background-image: url(/resources/images/ps4_controller.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: clip;
+  background-position: center;
+  background-size: 100%;
   z-index: 1;
 }
 
 .intro h1 {
+  font-family: "Orbitron", sans-serif;
+  color: white;
+  padding: 100px 0;
+  margin: 0;
 }
