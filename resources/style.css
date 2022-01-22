@@ -121,7 +121,7 @@ h2 {
 
 /* Styling for topnav on small screens */
 
-/*For animation of dropdown menu */
+/*For fade in animations*/
 @keyframes menuFade {
   0% {
     opacity: 0;
@@ -202,6 +202,24 @@ h2 {
 .member-profile {
   background: linear-gradient(greenyellow, rgb(233, 255, 197));
   margin: 10px auto;
+  border: 10px solid white;
+  border-style: none solid;
   border-radius: 10px;
   width: 70%;
+  opacity: 0;
+}
+
+#a {
+  animation: menuFade 900ms ease-in-out forwards;
+  animation-delay: 150ms;
+}
+
+#b {
+  animation: menuFade 900ms ease-in-out forwards;
+  animation-delay: 550ms;
+}
+
+#c {
+  animation: menuFade 900ms ease-in-out forwards;
+  animation-delay: 950ms;
 }
