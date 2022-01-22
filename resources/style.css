@@ -119,50 +119,49 @@ h2 {
   }
 }
 
-  /* Styling for topnav on small screens */
+/* Styling for topnav on small screens */
 
-  /*For animation of dropdown menu */
-  @keyframes menuFade {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 100%;
-    }
+/*For animation of dropdown menu */
+@keyframes menuFade {
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 100%;
+  }
+}
 
-  .topnav.responsive ul {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 100%;
-    background-color: rgb(53, 53, 53);
-    margin-top: 62px;
-    animation: menuFade 500ms ease-in-out forwards;
-    z-index: 2;
-    position: absolute;
-  }
+.topnav.responsive ul {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 100%;
+  background-color: rgb(53, 53, 53);
+  margin-top: 62px;
+  animation: menuFade 500ms ease-in-out forwards;
+  z-index: 2;
+  position: absolute;
+}
 
-  .topnav.responsive ul li {
-    border: 1px solid rgb(121, 121, 121);
-    border-style: none none solid none;
-    padding: 0 100%;
-    position: relative;
-  }
+.topnav.responsive ul li {
+  border: 1px solid rgb(121, 121, 121);
+  border-style: none none solid none;
+  padding: 0 100%;
+  position: relative;
+}
 
-  .topnav.responsive li:hover {
-    background-color: greenyellow;
-    animation: menuFade 400ms ease-in-out forwards;
-  }
+.topnav.responsive li:hover {
+  background-color: greenyellow;
+  animation: menuFade 400ms ease-in-out forwards;
+}
 
-  .topnav.responsive li:hover a {
-    color: rgb(53, 53, 53);
-  }
+.topnav.responsive li:hover a {
+  color: rgb(53, 53, 53);
+}
 
-  .topnav.responsive a {
-    font-size: 3rem;
-  }
+.topnav.responsive a {
+  font-size: 3rem;
 }
 
 /* Styling for Intro Section */
@@ -206,6 +205,3 @@ h2 {
   border-radius: 10px;
   width: 70%;
 }
-
-
-  
