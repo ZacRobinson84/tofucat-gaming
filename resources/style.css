@@ -22,9 +22,83 @@ h1 {
     rgb(94, 255, 102),
     rgb(173, 80, 173)
   );
-  background-size: 100%;
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   color: transparent;
 }
+
+.topnav {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(121, 121, 121);
+  font-family: "Russo One", sans-serif;
+  font-size: 2rem;
+  overflow: hidden;
+}
+
+.topnav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topnav a {
+  text-decoration: none;
+  color: white;
+  padding: 0 2rem;
+  border-radius: 5px;
+}
+
+.topnav a:hover {
+  background-color: greenyellow;
+  color: rgb(121, 121, 121);
+}
+
+.topnav li {
+  display: inline;
+}
+
+@media screen and (max-width: 761px) {
+  .topnav {
+    font-size: 1.5rem;
+  }
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 635px) {
+  .topnav ul {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .menu-icon:hover {
+    background-color: greenyellow;
+  }
+
+  .menu-icon-bars {
+    background-color: white;
+    width: 4rem;
+    height: 0.25rem;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  .menu-icon:hover .menu-icon-bars {
+    background-color: rgb(121, 121, 121);
+  }
+
+  .topnav.responsive ul {
+    display: block;
+  }
+}
+
+/* Styling for topnav on small screens */
