@@ -1,12 +1,15 @@
 body {
   font-size: 16px;
   margin: 0;
+  background-color: black;
 }
 
 h1 {
   font-size: 4rem;
   text-align: center;
 }
+
+/* Styling for Header and Navbar */
 
 .title {
   background-color: rgb(20, 20, 20);
@@ -35,6 +38,7 @@ h1 {
   font-family: "Russo One", sans-serif;
   font-size: 2rem;
   overflow: hidden;
+  z-index: 5;
 }
 
 .topnav ul {
@@ -98,11 +102,18 @@ h1 {
 
   /* Styling for topnav on small screens */
 
-  .topnav.responsive {
-  }
-
   .topnav.responsive .menu-icon {
     position: absolute;
+  }
+
+  /*For animation of dropdown menu */
+  @keyframes menuFade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100%;
+    }
   }
 
   .topnav.responsive ul {
@@ -110,9 +121,10 @@ h1 {
     flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
-    margin-top: 62px;
     padding: 0 100%;
     background-color: rgb(53, 53, 53);
+    margin-top: 62px;
+    animation: menuFade 500ms ease-in-out forwards;
   }
 
   .topnav.responsive li {
@@ -123,6 +135,7 @@ h1 {
 
   .topnav.responsive li:hover {
     background-color: greenyellow;
+    animation: menuFade 400ms ease-in-out forwards;
   }
 
   .topnav.responsive li:hover a {
@@ -132,4 +145,16 @@ h1 {
   .topnav.responsive a {
     font-size: 3rem;
   }
+}
+
+/* Styling for Intro Section */
+
+.intro {
+  background-image: url(/resources/images/ps4_controller.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.intro h1 {
 }
