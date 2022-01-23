@@ -214,8 +214,8 @@ h2 {
   opacity: 80%;
 }
 
-.intro-h1-addon {
-  position: absolute;
+.intro-h1-greenline {
+  position: fixed;
   background: linear-gradient(
     90deg,
     transparent,
@@ -228,6 +228,12 @@ h2 {
   z-index: 1;
   margin-top: 134px;
   opacity: 20%;
+}
+
+@media screen and (max-width: 635px) {
+  .intro-h1-greenline {
+    margin-top: 112px;
+  }
 }
 
 /* Styling for members page */
