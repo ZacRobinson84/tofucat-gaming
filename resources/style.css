@@ -164,7 +164,7 @@ h2 {
   );
   margin-top: 62px;
   animation: menuFade 500ms ease-in-out forwards;
-  z-index: 2;
+  z-index: 3;
   position: absolute;
 }
 
@@ -195,14 +195,15 @@ h2 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  z-index: 1;
 }
 
 .intro h1 {
+  position: relative;
   font-family: "Orbitron", sans-serif;
   color: white;
   padding: 100px 0;
   margin: 0;
+  z-index: 2;
 }
 
 .intro-footer {
@@ -210,6 +211,23 @@ h2 {
   height: 39px;
   background: radial-gradient(ellipse at top, #3f3f3f, transparent),
     radial-gradient(ellipse at bottom, #7a7a7a, transparent);
+  opacity: 80%;
+}
+
+.intro-h1-addon {
+  position: absolute;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    greenyellow,
+    greenyellow,
+    transparent
+  );
+  width: 100%;
+  height: 20px;
+  z-index: 1;
+  margin-top: 134px;
+  opacity: 20%;
 }
 
 /* Styling for members page */
@@ -223,10 +241,8 @@ h2 {
   font-family: "Russo One", sans-serif;
   color: black;
   background-color: white;
-  border-radius: 10px;
-  margin: 10px auto;
-  width: 75%;
-  text-overflow: clip;
+  margin: 20px auto;
+  width: 100%;
 }
 
 .member-profile {
