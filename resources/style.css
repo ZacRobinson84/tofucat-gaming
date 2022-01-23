@@ -39,8 +39,14 @@ h2 {
 .topnav {
   display: flex;
   justify-content: space-around;
-  background: radial-gradient(ellipse at top, #3f3f3f, transparent),
-    radial-gradient(ellipse at bottom, #7a7a7a, transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    transparent,
+    rgb(50, 50, 50),
+    transparent,
+    transparent
+  );
   font-family: "Russo One", sans-serif;
   font-size: 2rem;
   overflow: hidden;
@@ -64,7 +70,7 @@ h2 {
 
 .topnav a:hover {
   background-color: greenyellow;
-  color: rgb(121, 121, 121);
+  color: rgb(20, 20, 20);
 }
 
 .topnav li {
@@ -85,8 +91,17 @@ h2 {
   .title h1 {
     font-size: 3rem;
   }
+
   .intro h1 {
     font-size: 2rem;
+  }
+
+  .topnav a {
+    width: 100%;
+  }
+
+  .topnav a:hover {
+    background-color: transparent;
   }
 
   @media screen and (max-width: 450px) {
@@ -120,7 +135,7 @@ h2 {
   }
 
   .menu-icon:hover .menu-icon-bars {
-    background-color: rgb(121, 121, 121);
+    background-color: rgb(20, 20, 20);
   }
 
   .members h1 {
@@ -176,7 +191,7 @@ h2 {
 }
 
 .topnav.responsive li:hover {
-  background-color: greenyellow;
+  background: linear-gradient(90deg, transparent, greenyellow, transparent);
   animation: menuFade 400ms ease-in-out forwards;
 }
 
@@ -246,7 +261,7 @@ h2 {
 .members h1 {
   font-family: "Russo One", sans-serif;
   color: black;
-  background-color: white;
+  background: linear-gradient(90deg, transparent, white, transparent);
   margin: 20px auto;
   width: 100%;
 }
@@ -259,6 +274,10 @@ h2 {
   border-radius: 10px;
   width: 70%;
   opacity: 0;
+}
+
+.member-profile:hover {
+  background: linear-gradient(white, transparent);
 }
 
 #a {
