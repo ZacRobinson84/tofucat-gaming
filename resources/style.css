@@ -1,6 +1,3 @@
-html {
-}
-
 body {
   font-size: 16px;
   margin: 0;
@@ -87,15 +84,18 @@ h2 {
   display: none;
 }
 
-@media screen and (max-width: 635px) {
+@media screen and (max-width: 659px) {
   .title h1 {
     font-size: 3rem;
   }
 
-  .intro h1 {
+  .container h1 {
     font-size: 2rem;
   }
 
+  #intro.h1-background-line {
+    margin-top: 112px;
+  }
   .topnav a {
     width: 100%;
   }
@@ -200,19 +200,22 @@ h2 {
 }
 
 .topnav.responsive a {
-  font-size: 2.75rem;
+  font-size: 2.55rem;
 }
 
 /* Styling for Intro Section */
 
-.intro {
-  background-image: url(./images/ps4_controller.jpg);
+.container {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
 }
 
-.intro h1 {
+#intro.container {
+  background-image: url(./images/ps4_controller.jpg);
+}
+
+.container h1 {
   position: relative;
   font-family: "Orbitron", sans-serif;
   color: white;
@@ -221,7 +224,7 @@ h2 {
   z-index: 2;
 }
 
-.intro-footer {
+.container-footer {
   width: 100%;
   height: 39px;
   background: radial-gradient(ellipse at top, #3f3f3f, transparent),
@@ -229,7 +232,7 @@ h2 {
   opacity: 80%;
 }
 
-.intro-h1-greenline {
+.h1-background-line {
   position: fixed;
   background: linear-gradient(
     90deg,
@@ -245,9 +248,42 @@ h2 {
   opacity: 20%;
 }
 
-@media screen and (max-width: 635px) {
-  .intro-h1-greenline {
-    margin-top: 112px;
+/*Styling for Statement Section*/
+
+#statement.container {
+  background-image: url(./images/fortnite_kid_pc.jpg);
+}
+
+#statement h1 {
+  font-size: 2.5rem;
+}
+
+#statement.h1-background-line {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgb(29, 29, 29),
+    rgb(29, 29, 29),
+    rgb(29, 29, 29),
+    transparent
+  );
+  height: 40px;
+  opacity: 60%;
+  margin-top: 109px;
+}
+
+@media screen and (max-width: 1142px) {
+  #statement.h1-background-line {
+    height: 85px;
+  }
+}
+
+@media screen and (max-width: 589px) {
+  #statement.h1-background-line {
+    height: 110px;
+  }
+  #statement h1 {
+    font-size: 2rem;
   }
 }
 
@@ -256,6 +292,11 @@ h2 {
 .members {
   display: flex;
   flex-flow: column nowrap;
+  background-image: url(./images/e_sport.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 200px;
 }
 
 .members h1 {
@@ -267,7 +308,7 @@ h2 {
 }
 
 .member-profile {
-  background: linear-gradient(greenyellow, rgb(233, 255, 197));
+  background: linear-gradient(greenyellow, rgb(223, 255, 171));
   margin: 10px auto;
   border: 10px solid white;
   border-style: none solid;
@@ -277,7 +318,7 @@ h2 {
 }
 
 .member-profile:hover {
-  background: linear-gradient(white, transparent);
+  background: linear-gradient(rgb(201, 201, 201), rgb(172, 172, 172));
 }
 
 #a {
