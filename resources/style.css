@@ -203,7 +203,7 @@ h2 {
   font-size: 2.55rem;
 }
 
-/* Styling for Intro Section */
+/* Intro Section */
 
 .container {
   background-repeat: no-repeat;
@@ -233,7 +233,7 @@ h2 {
 }
 
 .h1-background-line {
-  position: fixed;
+  position: absolute;
   background: linear-gradient(
     90deg,
     transparent,
@@ -248,7 +248,7 @@ h2 {
   opacity: 20%;
 }
 
-/*Styling for Statement Section*/
+/* Statement Section */
 
 #statement.container {
   background-image: url(./images/fortnite_kid_pc.jpg);
@@ -256,6 +256,7 @@ h2 {
 
 #statement h1 {
   font-size: 2.5rem;
+  padding: 200px;
 }
 
 #statement.h1-background-line {
@@ -269,7 +270,7 @@ h2 {
   );
   height: 40px;
   opacity: 60%;
-  margin-top: 109px;
+  margin-top: 205px;
 }
 
 @media screen and (max-width: 1142px) {
@@ -287,7 +288,23 @@ h2 {
   }
 }
 
-/* Styling for members page */
+/* Games Page */
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container img {
+  width: 200px;
+  height: auto;
+}
+
+.games h1 {
+  font-family: "Orbitron", sans-serif;
+  color: white;
+}
+
+/* Members page */
 
 .members {
   display: flex;
