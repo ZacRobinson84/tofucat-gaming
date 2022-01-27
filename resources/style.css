@@ -278,12 +278,15 @@ h2 {
   }
 }
 
+@media screen and (max-width: 589px) {
+  #statement h1 {
+    font-size: 2rem;
+  }
+}
+
 @media screen and (max-width: 471px) {
   #statement.h1-background-line {
     height: 110px;
-  }
-  #statement h1 {
-    font-size: 2rem;
   }
 }
 
