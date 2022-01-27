@@ -24,13 +24,17 @@ h2 {
 
 #title-hi {
   font-family: "Russo One", sans-serif;
-  margin: 0 auto;
-  background: radial-gradient(ellipse at top, #f396ff, transparent),
-    radial-gradient(ellipse at bottom, #5dffe4, transparent);
+  margin: 0;
+  background: linear-gradient(90deg, lightblue, pink, white);
+  background-size: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   color: transparent;
+  border: 6px solid rgb(17, 17, 17);
+  border-style: solid none;
 }
 
 .topnav {
@@ -161,7 +165,7 @@ h2 {
     opacity: 0;
   }
   100% {
-    opacity: 100%;
+    opacity: 98%;
   }
 }
 
@@ -353,6 +357,23 @@ h2 {
   }
 }
 
+/* Footer */
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+  font-size: 1.5rem;
+  color: rgb(99, 99, 99);
+  text-align: center;
+}
+
+footer p {
+  padding: 0 20px;
+}
+
 /* Members page */
 
 .members {
@@ -374,17 +395,24 @@ h2 {
 }
 
 .member-profile {
-  background: linear-gradient(greenyellow, rgb(223, 255, 171));
+  background: linear-gradient(rgb(238, 217, 179), rgb(249, 255, 254));
   margin: 10px auto;
   border: 10px solid white;
   border-style: none solid;
   border-radius: 10px;
-  width: 70%;
+  width: 40%;
   opacity: 0;
 }
 
+@media screen and (max-width: 1110px) {
+  .member-profile {
+    width: 70%;
+  }
+}
+
 .member-profile:hover {
-  background: linear-gradient(rgb(201, 201, 201), rgb(172, 172, 172));
+  background: black;
+  color: white;
 }
 
 #a {
